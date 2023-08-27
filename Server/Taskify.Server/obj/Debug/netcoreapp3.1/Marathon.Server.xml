@@ -1,0 +1,356 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Marathon.Server</name>
+    </assembly>
+    <members>
+        <member name="M:Marathon.Server.Features.Identity.IdentityController.Register(Marathon.Server.Features.Identity.Models.RegisterUserRequestModel)">
+            <summary>
+            Register new User.
+            </summary>
+            <param name="input"></param>
+            <response code="201"> Successfully registered user.</response>
+            <response code="400"> Bad Reaquest.</response>
+            <response code="401"> Unauthorized request.</response>
+        </member>
+        <member name="M:Marathon.Server.Features.Identity.IdentityController.Login(Marathon.Server.Features.Identity.Models.LoginRequestModel)">
+            <summary>
+            Log in User.
+            </summary>
+            <param name="input"></param>
+            <response code="200"> Successfully logged in user.</response>
+            <response code="400"> Bad Reaquest.</response>
+            <response code="401"> Unauthorized request.</response>
+        </member>
+        <member name="M:Marathon.Server.Features.Identity.IdentityController.UpdateUser(Marathon.Server.Features.Identity.Models.UpdateUserRequestModel)">
+            <summary>
+            Update User.
+            </summary>
+            <response code="200"> Successfully updated user.</response>
+            <response code="400"> Bad Reaquest.</response>
+            <response code="401"> Unauthorized request.</response>
+        </member>
+        <member name="M:Marathon.Server.Features.Identity.IdentityController.GetUser">
+            <summary>
+            Get User.
+            </summary>
+            <response code="200"> Successfully returned user.</response>
+            <response code="400"> Bad Reaquest.</response>
+            <response code="401"> Unauthorized request.</response>
+        </member>
+        <member name="M:Marathon.Server.Features.Identity.IdentityController.Logout(System.String)">
+            <summary>
+            Logout User.
+            </summary>
+            <response code="200"> Successfully logged out user.</response>
+            <response code="400"> Bad Reaquest.</response>
+            <response code="401"> Unauthorized request.</response>
+        </member>
+        <member name="M:Marathon.Server.Features.Invitations.InvitationsController.InviteUserToTeam(System.Int32,System.Int32,Marathon.Server.Features.Invitations.Models.InviteUserToTeamRequestModel)">
+            <summary>
+            Invite current User to current Team.
+            </summary>
+            <param name="projectId"></param>
+            <param name="teamId"></param>
+            <param name="input"></param>
+            <response code="200"> Successfully invited user to team.</response>
+            <response code="400"> Bad Reaquest.</response>
+            <response code="401"> Unauthorized request.</response>
+        </member>
+        <member name="M:Marathon.Server.Features.Invitations.InvitationsController.AcceptInvitation(Marathon.Server.Features.Invitations.Models.InvitationReaquestModel)">
+            <summary>
+            Accept current Invitation to join Team.
+            </summary>
+            <response code="200"> Successfully assigned user to team.</response>
+            <response code="400"> Bad Reaquest.</response>
+            <response code="401"> Unauthorized request.</response>
+        </member>
+        <member name="M:Marathon.Server.Features.Invitations.InvitationsController.GetAll">
+            <summary>
+            Get All Invitations.
+            </summary>
+            <response code="200"> Successfully assigned user to team.</response>
+            <response code="400"> Bad Reaquest.</response>
+            <response code="401"> Unauthorized request.</response>
+        </member>
+        <member name="M:Marathon.Server.Features.Invitations.InvitationsController.Decline(Marathon.Server.Features.Invitations.Models.InvitationReaquestModel)">
+            <summary>
+            Decline current invitation.
+            </summary>
+            <response code="200">Successfully declined.</response>
+            <response code="400"> Bad Reaquest.</response>
+            <response code="401"> Unauthorized request.</response>
+        </member>
+        <member name="M:Marathon.Server.Features.Invitations.InvitationsController.Delete(Marathon.Server.Features.Invitations.Models.InvitationReaquestModel)">
+            <summary>
+            Delete current invitation.
+            </summary>
+            <response code="200">Successfully deleted.</response>
+            <response code="400"> Bad Reaquest.</response>
+            <response code="401"> Unauthorized request.</response>
+        </member>
+        <member name="M:Marathon.Server.Features.Issues.IssuesController.Create(System.Int32,Marathon.Server.Features.Issues.Models.CreateIssueRequestModel)">
+            <summary>
+            Creates new Issue.
+            </summary>
+            <param name="input"></param>
+            <param name="projectId"></param>
+            <response code="201"> Successfully created issue.</response>
+            <response code="400"> Bad Reaquest.</response>
+            <response code="401"> Unauthorized request.</response>
+        </member>
+        <member name="M:Marathon.Server.Features.Issues.IssuesController.Update(System.Int32,System.Int32,Marathon.Server.Features.Issues.Models.UpdateIssueRequestModel)">
+            <summary>
+            Update current issue.
+            </summary>
+            <param name="input"></param>
+            <param name="projectId"></param>
+            <param name="issueId"></param>
+            <response code="200">Successfully updated.</response>
+            <response code="400"> Bad Reaquest.</response>
+            <response code="401"> Unauthorized request.</response>
+        </member>
+        <member name="M:Marathon.Server.Features.Issues.IssuesController.Delete(System.Int32,System.Int32)">
+            <summary>
+            Delete current issue.
+            </summary>
+            <param name="projectId"></param>
+            <param name="issueId"></param>
+            <response code="200">Successfully deleted.</response>
+            <response code="400"> Bad Reaquest.</response>
+            <response code="401"> Unauthorized request.</response>
+        </member>
+        <member name="M:Marathon.Server.Features.Issues.IssuesController.Details(System.Int32,System.Int32)">
+            <summary>
+            Get details for current issue.
+            </summary>
+            <param name="issueId"></param>
+            <param name="projectId"></param>
+            <response code="200"> Successfully return details for current issue.</response>
+            <response code="400"> Bad Reaquest.</response>
+            <response code="401"> Unauthorized request.</response>
+        </member>
+        <member name="M:Marathon.Server.Features.Issues.IssuesController.GetAll(System.Int32)">
+            <summary>
+            Get all issues for current project - creator.
+            </summary>
+            <response code="200">Returns all issues for current project.</response>
+            <response code="400"> Bad Reaquest.</response>
+            <response code="401"> Unauthorized request.</response>
+        </member>
+        <member name="M:Marathon.Server.Features.Issues.IssuesController.ChangeStatus(System.Int32,System.Int32,Marathon.Server.Features.Issues.Models.ChangeStatusRequestModel)">
+            <summary>
+            Change status of current issue.
+            </summary>
+            <param name="issueId"></param>
+            <param name="projectId"></param>
+            <param name="model"></param>
+            <response code="200">Successfully updated.</response>
+            <response code="400"> Bad Reaquest.</response>
+            <response code="401"> Unauthorized request.</response>
+        </member>
+        <member name="M:Marathon.Server.Features.Projects.ProjectsController.GetAll">
+            <summary>
+            Get all projects for current user - creator or participant.
+            </summary>
+            <response code="200">Returns all projects for current user.</response>
+            <response code="400"> Bad Reaquest.</response>
+            <response code="401"> Unauthorized request.</response>
+        </member>
+        <member name="M:Marathon.Server.Features.Projects.ProjectsController.Create(Marathon.Server.Features.Projects.Models.CreateProjectRequestModel)">
+            <summary>
+            Creates new Project.
+            </summary>
+            <param name="input"></param>
+            <response code="201"> Successfully created project.</response>
+            <response code="400"> Bad Reaquest.</response>
+            <response code="401"> Unauthorized request.</response>
+        </member>
+        <member name="M:Marathon.Server.Features.Projects.ProjectsController.Update(System.Int32,Marathon.Server.Features.Projects.Models.UpdateProjectRequestModel)">
+            <summary>
+            Update current project.
+            </summary>
+            <param name="input"></param>
+            <param name="projectId"></param>
+            <response code="200">Successfully updated.</response>
+            <response code="400"> Bad Reaquest.</response>
+            <response code="401"> Unauthorized request.</response>
+        </member>
+        <member name="M:Marathon.Server.Features.Projects.ProjectsController.Delete(System.Int32)">
+            <summary>
+            Delete current project.
+            </summary>
+            <param name="projectId"></param>
+            <response code="200">Successfully deleted.</response>
+            <response code="400"> Bad Reaquest.</response>
+            <response code="401"> Unauthorized request.</response>
+        </member>
+        <member name="M:Marathon.Server.Features.Projects.ProjectsController.Details(System.Int32)">
+            <summary>
+            Get details for current project.
+            </summary>
+            <param name="projectId"></param>
+            <response code="200"> Successfully return details for current project.</response>
+            <response code="400"> Bad Reaquest.</response>
+            <response code="401"> Unauthorized request.</response>
+        </member>
+        <member name="M:Marathon.Server.Features.Projects.ProjectsController.AssignTeamToProject(System.Int32,System.Int32)">
+            <summary>
+            Assign current Team to current Project.
+            </summary>
+            <param name="projectId"></param>
+            <param name="teamId"></param>
+            <response code="200"> Successfully assigned team to project.</response>
+            <response code="400"> Bad Reaquest.</response>
+            <response code="401"> Unauthorized request.</response>
+        </member>
+        <member name="M:Marathon.Server.Features.Projects.ProjectsController.RemoveTeamFromProject(System.Int32,System.Int32)">
+            <summary>
+            Remove current Team from current Project.
+            </summary>
+            <param name="teamId"></param>
+            <param name="projectId"></param>
+            <response code="200"> Successfully removed team from project.</response>
+            <response code="400"> Bad Reaquest.</response>
+            <response code="401"> Unauthorized request.</response>
+        </member>
+        <member name="M:Marathon.Server.Features.Projects.ProjectsController.AssignAdminToProject(System.Int32,System.String)">
+            <summary>
+            Assign current User to current Project as Admin.
+            </summary>
+            <param name="projectId"></param>
+            <param name="userId"></param>
+            <response code="200"> Successfully assigned admin to project.</response>
+            <response code="400"> Bad Reaquest.</response>
+            <response code="401"> Unauthorized request.</response>
+        </member>
+        <member name="M:Marathon.Server.Features.Projects.ProjectsController.RemoveAdminFromProject(System.Int32,System.String)">
+            <summary>
+            Remove current User from current Project as Admin.
+            </summary>
+            <param name="projectId"></param>
+            <param name="userId"></param>
+            <response code="200"> Successfully removed team from project.</response>
+            <response code="400"> Bad Reaquest.</response>
+            <response code="401"> Unauthorized request.</response>
+        </member>
+        <member name="M:Marathon.Server.Features.Sprints.SprintsController.Create(System.Int32)">
+            <summary>
+            Creates new Sprint.
+            </summary>
+            <param name="projectId"></param>
+            <response code="201"> Successfully created sprint.</response>
+            <response code="400"> Bad Reaquest.</response>
+            <response code="401"> Unauthorized request.</response>
+        </member>
+        <member name="M:Marathon.Server.Features.Sprints.SprintsController.GetAll(System.Int32)">
+            <summary>
+            Get all sprints for current project.
+            </summary>
+            <response code="200">Returns all sprints for current project.</response>
+            <response code="400"> Bad Reaquest.</response>
+            <response code="401"> Unauthorized request.</response>
+        </member>
+        <member name="M:Marathon.Server.Features.Sprints.SprintsController.Details(System.Int32,System.Int32)">
+            <summary>
+            Get details for current sprint.
+            </summary>
+            <param name="projectId"></param>
+            <param name="sprintId"></param>
+            <response code="200"> Successfully return details for current sprint.</response>
+            <response code="400"> Bad Reaquest.</response>
+            <response code="401"> Unauthorized request.</response>
+        </member>
+        <member name="M:Marathon.Server.Features.Sprints.SprintsController.Update(System.Int32,System.Int32,Marathon.Server.Features.Sprints.Models.UpdateSprintRequestModel)">
+            <summary>
+            Update current sprint.
+            </summary>
+            <param name="input"></param>
+            <param name="projectId"></param>
+            <param name="sprintId"></param>
+            <response code="200">Successfully updated.</response>
+            <response code="400"> Bad Reaquest.</response>
+            <response code="401"> Unauthorized request.</response>
+        </member>
+        <member name="M:Marathon.Server.Features.Sprints.SprintsController.Complete(System.Int32,System.Int32,Marathon.Server.Features.Sprints.Models.CompleteSprintRequestModel)">
+            <summary>
+            Complete current sprint.
+            </summary>
+            <param name="input"></param>
+            <param name="projectId"></param>
+            <param name="sprintId"></param>
+            <response code="200">Successfully updated.</response>
+            <response code="400"> Bad Reaquest.</response>
+            <response code="401"> Unauthorized request.</response>
+        </member>
+        <member name="M:Marathon.Server.Features.Sprints.SprintsController.Delete(System.Int32,System.Int32)">
+            <summary>
+            Delete current sprint.
+            </summary>
+            <param name="projectId"></param>
+            <param name="sprintId"></param>
+            <response code="200">Successfully deleted.</response>
+            <response code="400"> Bad Reaquest.</response>
+            <response code="401"> Unauthorized request.</response>
+        </member>
+        <member name="M:Marathon.Server.Features.Teams.TeamsController.Create(System.Int32,Marathon.Server.Features.Teams.Models.CreateTeamRequestModel)">
+            <summary>
+            Creates new Team.
+            </summary>
+            <param name="input"></param>
+            <param name="projectId"></param>
+            <response code="201"> Successfully created team.</response>
+            <response code="400"> Bad Reaquest.</response>
+            <response code="401"> Unauthorized request.</response>
+        </member>
+        <member name="M:Marathon.Server.Features.Teams.TeamsController.Update(System.Int32,System.Int32,Marathon.Server.Features.Teams.Models.UpdateTeamRequestModel)">
+            <summary>
+            Update current team.
+            </summary>
+            <param name="input"></param>
+            <param name="projectId"></param>
+            <param name="teamId"></param>
+            <response code="200">Successfully updated.</response>
+            <response code="400"> Bad Reaquest.</response>
+            <response code="401"> Unauthorized request.</response>
+        </member>
+        <member name="M:Marathon.Server.Features.Teams.TeamsController.Delete(System.Int32)">
+            <summary>
+            Delete current team.
+            </summary>
+            <param name="teamId"></param>
+            <response code="200">Successfully deleted.</response>
+            <response code="400"> Bad Reaquest.</response>
+            <response code="401"> Unauthorized request.</response>
+        </member>
+        <member name="M:Marathon.Server.Features.Teams.TeamsController.GetAll(System.Int32)">
+            <summary>
+            Get all teams in current project.
+            </summary>
+            <param name="projectId"></param>
+            <response code="200">Returns all teams in current project.</response>
+            <response code="400"> Bad Reaquest.</response>
+            <response code="401"> Unauthorized request.</response>
+        </member>
+        <member name="M:Marathon.Server.Features.Teams.TeamsController.RemoveUserFromTeam(System.Int32,System.Int32,Marathon.Server.Features.Identity.Models.UserIdRequestModel)">
+            <summary>
+            Remove current User from current Team.
+            </summary>
+            <param name="teamId"></param>
+            <param name="projectId"></param>
+            <param name="input"></param>
+            <response code="200"> Successfully removed user from team.</response>
+            <response code="400"> Bad Reaquest.</response>
+            <response code="401"> Unauthorized request.</response>
+        </member>
+        <member name="M:Marathon.Server.Features.Teams.TeamsController.Details(System.Int32)">
+            <summary>
+            Get details for current team.
+            </summary>
+            <param name="teamId"></param>
+            <response code="200"> Successfully return details for current ream.</response>
+            <response code="400"> Bad Reaquest.</response>
+            <response code="401"> Unauthorized request.</response>
+        </member>
+    </members>
+</doc>
