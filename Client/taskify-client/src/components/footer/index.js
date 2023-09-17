@@ -4,7 +4,7 @@ import React from 'react';
 
 const Footer = () => {
 	return (
-		<footer className="text-gray-700 body-font">
+		<footer className="text-gray-700 body-font sticky bottom-0">
 			<div className="container px-5 py-3 mx-auto flex items-center sm:flex-row flex-col">
 				<p className="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:py-2 sm:mt-0 mt-4">© 2023 Mustafa Esti & Zeynep Feyza Yildiz</p>
 				{/* <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 sm:justify-start lg:justify-end">

@@ -11,7 +11,7 @@ const DashboardNavItem = ({ type, children, to, handleClick }) => {
 		inactive: {
 			a: '',
 			i: '',
-			span: 'hover:text-orange-500 text-xs text-gray-600'
+			span: 'hover:text-orange-500 text-lg text-gray-600'
 		}
 	};
 	return (

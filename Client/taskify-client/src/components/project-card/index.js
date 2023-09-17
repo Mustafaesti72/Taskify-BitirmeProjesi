@@ -94,7 +94,7 @@ const ProjectCard = ({ initialData }) => {
 							value={data.name}
 							onChange={handleChange}
 							handleOnBlur={(event) => handleOnBlur(event, validateName, { name: data.name })}
-							placeholder="Project Name"
+							placeholder="Proje ismi"
 						/>
 						{errors.name ? <ErrorMessageContainer>{errors.name}</ErrorMessageContainer> : null}
 					</div>
@@ -105,9 +105,9 @@ const ProjectCard = ({ initialData }) => {
 						<p className="mt-1">{data.key}</p>
 						<div>
 							{data.isCurrentUserCreator ? (
-								<Tag text="creator" color="orange-500" size="w-16 h-4" />
+								<Tag text="Admin" color="orange-500" size="w-16 h-4" />
 							) : (
-								<Tag text="team" color="green-500" size="w-16 h-4" />
+								<Tag text="Üye" color="green-500" size="w-16 h-4" />
 							)}
 						</div>
 					</Fragment>
@@ -117,7 +117,7 @@ const ProjectCard = ({ initialData }) => {
 							className="focus:outline-none p-1 pl-2 text-base text-gray-600 leading-normal"
 							type="text"
 							name="key"
-							placeholder="Key"
+							placeholder="Anahtar"
 							value={data.key}
 							handleChange={handleChange}
 							handleOnBlur={(event) => handleOnBlur(event, validateKey, { key: data.key })}

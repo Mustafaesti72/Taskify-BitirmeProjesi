@@ -67,7 +67,7 @@ const DashboardNavBar = ({ otherClasses }) => {
 	};
 
 	return (
-		<div className={`${otherClasses} bg-gray-100 text-center h-10 border-b-2 border-t-1`}>
+		<div className={`${otherClasses} bg-custom text-center border-b-2 p-8 border-t-1 rounded-2xl mt-4 mr-40`}>
 			<div className=" mx-auto px-10">
 				<ul className="list-reset flex flex-row text-center">
 					<DashboardNavItem
@@ -75,14 +75,14 @@ const DashboardNavBar = ({ otherClasses }) => {
 						type={boardLinkIsClicked ? 'active' : 'inactive'}
 						to={`/user/dashboard/${id}/board`}
 					>
-						Board
+						Pano
 					</DashboardNavItem>
 					<DashboardNavItem
 						handleClick={handleBacklogLinkClick}
 						type={backlogLinkIsClicked ? 'active' : 'inactive'}
 						to={`/user/dashboard/${id}/backlog`}
 					>
-						Backlog
+						Görevler
 					</DashboardNavItem>
 
 					<DashboardNavItem
@@ -90,7 +90,7 @@ const DashboardNavBar = ({ otherClasses }) => {
 						type={teamLinkIsClicked ? 'active' : 'inactive'}
 						to={`/user/dashboard/${id}/teams`}
 					>
-						Teams
+						Takımlar
 					</DashboardNavItem>
 
 					{/* <DashboardNavItem

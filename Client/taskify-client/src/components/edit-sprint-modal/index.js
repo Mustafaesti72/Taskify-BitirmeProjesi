@@ -82,7 +82,7 @@ const EditSprintModal = () => {
 			>
 				<div className="flex md:mt-4 mt-6">
 					<DeleteButton handleDelete={handleDeleteSprint} />
-					<SubmitButton left="ml-6">Edit</SubmitButton>
+					<SubmitButton left="ml-6">Kaydet</SubmitButton>
 				</div>
 			</SprintForm>
 		</ModalContainer>

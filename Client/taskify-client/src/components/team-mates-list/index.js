@@ -33,7 +33,7 @@ const TeamMatesList = ({ people, teamId }) => {
 			value={person.email}
 			valueOffset="ml-4"
 		>
-			<Avatar bgColor="orange" user={person} />
+			<Avatar bgColor="orange" user={person} size="w-50 h-50"/>
 		</UserCard>
 	));
 };

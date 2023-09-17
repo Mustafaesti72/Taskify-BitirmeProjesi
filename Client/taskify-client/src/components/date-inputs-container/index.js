@@ -21,11 +21,10 @@ const DateInputs = ({ data, errors, setErrors, setData, startDateOnBlur, endDate
 		setData({ ...data, endDate: date });
 		setErrors({ ...errors, endDate: '' });
 	};
-
 	return (
 		<Fragment>
 			<div className="p-2 w-4/6">
-				<CustomLabel labelFor="title">start date</CustomLabel>
+				<CustomLabel labelFor="title">Başlangıç Tarihi</CustomLabel>
 				<DatePicker
 					name="startDate"
 					minDate={minDate}
@@ -39,7 +38,7 @@ const DateInputs = ({ data, errors, setErrors, setData, startDateOnBlur, endDate
 				{errors.startDate ? <ErrorMessageContainer>{errors.startDate}</ErrorMessageContainer> : null}
 			</div>
 			<div className="p-2 w-4/6">
-				<CustomLabel labelFor="title">end date</CustomLabel>
+				<CustomLabel labelFor="title">bitiş tarihi</CustomLabel>
 				<DatePicker
 					name="endDate"
 					minDate={minDate}

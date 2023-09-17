@@ -1,9 +1,9 @@
 export const mockStatuses = [
 	{
-		title: 'TO DO',
+		title: 'Yapılacaklar',
 		issues: [
 			{
-				title: 'Test to do',
+				title: 'Test yapılacaklar',
 				assignee: 'me',
 				type: 0,
 				priority: 0,

@@ -21,7 +21,7 @@ const IssueDetailsModal = () => {
 			<IssueForm
 				disabled={true}
 				handleFetchData={null}
-				formTitle="issue details"
+				formTitle="Görev Detayları"
 				handleModalClose={toggleUpdating}
 			/>
 		</ModalContainer>

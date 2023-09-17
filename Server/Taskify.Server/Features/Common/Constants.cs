@@ -5,26 +5,27 @@
         public const string DeactivatedTokenString = "token: {0} deactivated";
         public const string DefaultSprintName = "Sprint {0}";
 
-        public static class Errors
-        {
-            public const string UnuthorizedUser = "Unauthorized user or invalid project id";
-            public const string AlreadyRegisteredUser = "User with email: {0} is alredy registered.";
-            public const string AlreadyRegisteredUserName = "User with username: {0} is alredy registered.";
-            public const string InvalidUserName = "Invalid username.";
-            public const string InvalidUserId = "Invalid user id.";
-            public const string InvalidLoginAttempt = "Invalid email or password.";
-            public const string InvalidProjectId = "Invalid project id.";
-            public const string InvalidTeamId = "Invalid team id.";
-            public const string InvalidSprintId = "Invalid sprint id.";
-            public const string InvalidTeamIdOrUserId = "Invalid user or team id.";
-            public const string InvalidIssueId = "Invalid issue Id";
-            public const string InvalidStatusId = "Invalid status Id";
-            public const string InvalidInvitationId = "Invalid invitation Id";
-            public const string InvalidInvitation = "You are trying to invite yourself !";
-            public const string InvalidInvitationEmail = "There is no registered user with this email";
-            public const string AlredySendedInvitation = "Invitation to this user already sended";
-            public const string InvalidUserOrProjectId = "Invalid user or project Id";
-        }
+       public static class Errors
+{
+    public const string UnuthorizedUser = "Yetkilendirilmemiş kullanıcı veya geçersiz proje kimliği";
+    public const string AlreadyRegisteredUser = "E-posta: {0} ile kayıtlı bir kullanıcı zaten var.";
+    public const string AlreadyRegisteredUserName = "Kullanıcı adı: {0} ile kayıtlı bir kullanıcı zaten var.";
+    public const string InvalidUserName = "Geçersiz kullanıcı adı.";
+    public const string InvalidUserId = "Geçersiz kullanıcı kimliği.";
+    public const string InvalidLoginAttempt = "Geçersiz e-posta veya parola.";
+    public const string InvalidProjectId = "Geçersiz proje kimliği.";
+    public const string InvalidTeamId = "Geçersiz ekip kimliği.";
+    public const string InvalidSprintId = "Geçersiz sprint kimliği.";
+    public const string InvalidTeamIdOrUserId = "Geçersiz kullanıcı veya ekip kimliği.";
+    public const string InvalidIssueId = "Geçersiz görev Kimliği";
+    public const string InvalidStatusId = "Geçersiz durum Kimliği";
+    public const string InvalidInvitationId = "Geçersiz davet Kimliği";
+    public const string InvalidInvitation = "Kendinizi davet etmeye çalışıyorsunuz!";
+    public const string InvalidInvitationEmail = "Bu e-posta ile kayıtlı bir kullanıcı bulunmamaktadır.";
+    public const string AlredySendedInvitation = "Bu kullanıcıya zaten davet gönderilmiştir.";
+    public const string InvalidUserOrProjectId = "Geçersiz kullanıcı veya proje kimliği.";
+}
+
 
         public static class Claims
         {

@@ -43,17 +43,17 @@ const CreateTeamForm = () => {
 			onSubmit={(e) => handleSubmit(e, getErrors(), handleCreateTeam)}
 			className="lg:w-2/6 md:w-1/2 rounded-lg p-8 flex flex-col md:ml-0 w-full mt-10 md:mt-0"
 		>
-			<h2 className="text-gray-900 text-lg font-medium title-font mb-5">CREATE TEAM</h2>
+			<h2 className="text-gray-900 text-lg font-medium title-font mb-5">Takım Oluştur</h2>
 			<FormInput
 				handleChange={handleChange}
 				handleOnBlur={(event) => handleOnBlur(event, validateTitle, { title: data.title })}
 				type="text"
 				name="title"
 				value={data.title}
-				placeholder="Team Title"
+				placeholder="Takım İsmi"
 			/>
 			{errors.title ? <ErrorMessageContainer>{errors.title}</ErrorMessageContainer> : null}
-			<FormButton addClass="mt-4">SUBMIT</FormButton>
+			<FormButton addClass="mt-4">KAYDET</FormButton>
 		</form>
 	);
 };

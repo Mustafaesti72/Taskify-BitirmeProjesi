@@ -56,12 +56,12 @@ const SignUpForm = ({ classes, ...otherProps }) => {
 			className={`lg:w-2/6 md:w-1/2 rounded-lg p-8 flex flex-col md:ml-0 w-full mt-10 md:mt-0 ${classes}`}
 			{...otherProps}
 		>
-			<h2 className="text-gray-900 text-lg font-medium title-font mb-5">SIGN UP</h2>
+			<h2 className="text-gray-900 text-lg font-medium title-font mb-5">Üye Ol</h2>
 			<FormInput
 				type="text"
 				name="firstName"
 				value={data.firstName}
-				placeholder="First Name"
+				placeholder="Ad"
 				handleOnBlur={(event) => handleOnBlur(event, validateFirstName, { firstName: data.firstName })}
 				handleChange={handleChange}
 			/>
@@ -71,7 +71,7 @@ const SignUpForm = ({ classes, ...otherProps }) => {
 				type="text"
 				name="lastName"
 				value={data.lastName}
-				placeholder="Last Name"
+				placeholder="Soyad"
 				handleOnBlur={(event) => handleOnBlur(event, validateLastName, { lastName: data.lastName })}
 				handleChange={handleChange}
 			/>
@@ -81,7 +81,7 @@ const SignUpForm = ({ classes, ...otherProps }) => {
 				type="text"
 				name="username"
 				value={data.username}
-				placeholder="Username"
+				placeholder="Kullanıcı Adı"
 				handleOnBlur={(event) => handleOnBlur(event, validateUsername, { username: data.username })}
 				handleChange={handleChange}
 			/>
@@ -101,7 +101,7 @@ const SignUpForm = ({ classes, ...otherProps }) => {
 				type="password"
 				name="password"
 				value={data.password}
-				placeholder="Password"
+				placeholder="Parola"
 				handleOnBlur={(event) => handleOnBlur(event, validatePassword, { password: data.password })}
 				handleChange={handleChange}
 			/>
@@ -111,7 +111,7 @@ const SignUpForm = ({ classes, ...otherProps }) => {
 				type="password"
 				name="confirmPassword"
 				value={data.confirmPassword}
-				placeholder="Confirm Password"
+				placeholder="Parolayı Tekrarla"
 				handleOnBlur={(event) =>
 					handleOnBlur(event, validateConfirmPassword, {
 						password: data.password,
@@ -121,7 +121,7 @@ const SignUpForm = ({ classes, ...otherProps }) => {
 			/>
 			{errors.confirmPassword ? <ErrorMessageContainer>{errors.confirmPassword}</ErrorMessageContainer> : null}
 
-			<FormButton addClass="mt-4">SUBMIT</FormButton>
+			<FormButton addClass="mt-4">Kaydet</FormButton>
 		</form>
 	);
 };

@@ -5,7 +5,7 @@ import useHubConnection from '../../hooks/useHubConnection';
 import { getTeamDetails } from '../../services/teams.service';
 import { getCookie } from '../../utils/cookie';
 
-import { ReactComponent as Icon } from '../../assets/watermelon-pack-illustration-14.svg';
+import { ReactComponent as Icon } from '../../assets/plan.svg';
 import { ProjectsContext } from '../../providers/projects-context.provider';
 import { TeamsContext } from '../../providers/teams-context.provider';
 
@@ -51,7 +51,7 @@ const TeamDetailsPage = () => {
 		<Fragment>
 			<DashboardNavBar otherClasses="w-full" />
 			<MainWrapper otherClasses="mt-8">
-				<PageTopicContainer size="lg:w-3/4" title={`Team : ${team ? team.title : ''}`} bottom="mb-2">
+				<PageTopicContainer size="lg:w-3/4" title={`Takım : ${team ? team.title : ''}`} bottom="mb-2">
 					{currentProject.isCreator ? <InviteToTeamForm teamId={teamId} /> : null}
 				</PageTopicContainer>
 				<div className="container mx-auto flex px-10 py-20 md:flex-row flex-col items-center">
@@ -68,11 +68,11 @@ const TeamDetailsPage = () => {
 					<div className="lg:ml-12 lg:flex-grow md:w-1/2 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
 						{!team ? null : team.invitations.length > 0 ? (
 							<Fragment>
-								<InfoMessageContainer>Pending Invitations: </InfoMessageContainer>
+								<InfoMessageContainer>Bekleyen davetler: </InfoMessageContainer>
 								<UnacceptedInvitationsList invitations={team.invitations} />
 							</Fragment>
 						) : team.teamUsers.length > 0 ? (
-							<Icon className="w-64 h-64 sm:ml-32 md:ml-32" />
+							<Icon className="w-82 h-82 sm:ml-32 md:ml-32" />
 						) : null}
 					</div>
 				</div>

@@ -1,10 +1,12 @@
-import React from 'react';
-
+import React, {useContext} from 'react';
+import { Context } from '../../providers/global-context.provider';
 import { ReactComponent as HeroImage } from '../../assets/2080808_270191-P5GXOV-773.svg';
 import NavLink from '../nav-link';
 import FormButton from '../button-form';
 
 const HomeHero = () => {
+	const context = useContext(Context);
+	const isLoggedIn = context?.isLoggedIn || false;
 	return (
 		<div className="container mx-auto flex lg:py-20 py-10 md:flex-row flex-col items-center px-16 ">
 			<div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center">
@@ -15,11 +17,13 @@ const HomeHero = () => {
 				<p className="mb-8 leading-relaxed">
 				Taskify ile projelerinizi düzenlemek, takip etmek ve ekiplerinizle işbirliği yapmak artık daha hızlı ve etkili. İhtiyacınıza özel esneklik ve kullanıcı dostu arayüz sayesinde, projelerinizin kontrolünü elinizde tutun ve başarıya ulaşmak için daha güçlü bir şekilde yönlendirin. 
 				</p>
+				{!isLoggedIn && (
 				<div className="flex items-center flex-wrap">
 					<NavLink to="/signup">
 						<FormButton>Hemen Dene!</FormButton>
 					</NavLink>
-				</div>
+				</div> 
+				)}
 			</div>
 			<div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
 				<HeroImage className="object-cover object-center rounded" alt="hero" />

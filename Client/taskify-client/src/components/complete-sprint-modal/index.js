@@ -20,7 +20,7 @@ const CompleteSprintModal = () => {
 		<ModalContainer onClose={handleClose} show={completingSprint} addBgColor="bg-black bg-opacity-25">
 			<CompleteSprintForm>
 				<div className="flex md:mt-4 mt-6">
-					<SubmitButton>Complete</SubmitButton>
+					<SubmitButton>Tamamla</SubmitButton>
 				</div>
 			</CompleteSprintForm>
 		</ModalContainer>

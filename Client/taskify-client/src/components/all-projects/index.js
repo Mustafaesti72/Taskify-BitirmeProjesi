@@ -18,7 +18,7 @@ const ProjectsAll = ({ projects }) => {
 					</NavLink>
 				</PageTopicContainer>
 				<InfoMessageContainer addClass="lg:w-2/3 flex mt-8 flex-col  mx-auto">
-					Projeye giriç için ismine tıklayın
+					Projeye giriş için ismine tıklayın
 				</InfoMessageContainer>
 				<AllProjectsContainer>
 					<ProjectCardContainer>
