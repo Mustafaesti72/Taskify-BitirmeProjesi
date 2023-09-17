@@ -41,11 +41,11 @@ const ProfilePage = () => {
 			<div className="container px-5 py-24 mx-auto">
 				<div className="lg:w-4/5 mx-auto flex flex-wrap">
 					<div className="lg:w-1/2 w-full lg:pr-10 lg:py-20 mb-6 lg:mb-0">
-						<h2 className="text-sm title-font text-gray-500 tracking-widest">FULL NAME</h2>
+						<h2 className="text-sm title-font text-gray-500 tracking-widest">Ad Soyad</h2>
 						<h1 className="text-gray-900 text-3xl title-font font-medium mb-4">{user.fullName}</h1>
 
 						<div className="flex border-t border-gray-300 py-2">
-							<span className="text-gray-500">Username</span>
+							<span className="text-gray-500">Kullanıcı Adı</span>
 							<span className="ml-auto text-gray-900">{user.userName}</span>
 						</div>
 						{/* <div className="flex border-t border-gray-300 py-2">
@@ -61,7 +61,7 @@ const ProfilePage = () => {
 								onClick={openWidget}
 								className="flex ml-auto text-white bg-green-400 border-0 py-2 px-6 focus:outline-none hover:bg-teal-600 rounded"
 							>
-								{!loading ? 'Upload image' : 'Loading ...'}
+								{!loading ? 'Fotoğraf Yükle' : 'Yükleniyor ...'}
 							</button>
 						</div>
 					</div>

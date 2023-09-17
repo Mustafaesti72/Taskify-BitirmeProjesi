@@ -196,9 +196,9 @@ const BacklogPage = () => {
 					) : parentIndex === 0 ? (
 						<NoPlanedSprint />
 					) : parentIndex === backlogIssuesCollections.length - 1 ? (
-						'Your backlog is empty'
+						'Bekleyen işler listeniz boş.'
 					) : (
-						'Plan a sprint by dragging the sprint footer down below some issues, or by dragging issues here.'
+						'Bir sprint planlayın, görevleri buraya sürükleyerek ekleyebilirsiniz'
 					)}
 				</BacklogDndContainer>
 			);
@@ -220,7 +220,7 @@ const BacklogPage = () => {
 						}}
 					/>
 				</div>
-				<PageTopicContainer size="lg:w-5/6" title={`Backlog / ${!currentProject ? '' : currentProject.name}`} />
+				<PageTopicContainer size="lg:w-5/6" title={`${!currentProject ? '' : currentProject.name}`} />
 				<div className="overflow-y-auto h-screen">
 					{renderSprints()}
 					{startingSprint ? <StartSprintModal /> : null}

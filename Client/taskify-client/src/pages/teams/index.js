@@ -65,10 +65,10 @@ const TeamsPage = () => {
 			<DashboardNavBar otherClasses="w-full" />
 			<MainWrapper otherClasses="pb-24">
 				<div className="container px-5 py-8 mx-auto">
-					<PageTopicContainer size="lg:w-2/3" title="Teams" bottom="mb-5">
+					<PageTopicContainer size="lg:w-2/3" title="Takımlar" bottom="mb-5">
 						{currentProject.isCreator ? (
 							<NavLink to="/user/team/create">
-								<FormButton>Create</FormButton>
+								<FormButton>Oluştur</FormButton>
 							</NavLink>
 						) : null}
 					</PageTopicContainer>

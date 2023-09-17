@@ -4,13 +4,12 @@ const TEAM = {
 	TITLE_MIN_LENGTH: 3,
 	TITLE_MAX_LENGTH: 50
 };
-
 const ERROR_MESSAGES = {
 	TEAM: {
-		TITLE: `Team title should be between ${TEAM.TITLE_MIN_LENGTH} and ${TEAM.TITLE_MAX_LENGTH} characters long`,
-		TITLE_REQUIRED: 'Team title is required'
+	  TITLE: `Ekip başlığı ${TEAM.TITLE_MIN_LENGTH} ile ${TEAM.TITLE_MAX_LENGTH} karakter arasında olmalıdır`,
+	  TITLE_REQUIRED: 'Ekip başlığı gereklidir'
 	}
-};
+  };
 
 export const validateTitle = ({ title }) => {
 	if (!title) {

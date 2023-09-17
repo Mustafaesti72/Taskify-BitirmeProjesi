@@ -1953,8 +1953,8 @@ video {
 
 .bg-yellow-100 {
   --bg-opacity: 1;
-  background-color: #fffff0;
-  background-color: rgba(255, 255, 240, var(--bg-opacity));
+  background-color: #fad46b;
+  background-color: rgba(252, 213, 100, var(--bg-opacity));
 }
 
 .bg-yellow-200 {
@@ -2514,8 +2514,8 @@ video {
 
 .hover\:bg-yellow-100:hover {
   --bg-opacity: 1;
-  background-color: #fffff0;
-  background-color: rgba(255, 255, 240, var(--bg-opacity));
+  background-color: #fad46b;
+  background-color: rgba(252, 213, 100, var(--bg-opacity));
 }
 
 .hover\:bg-yellow-200:hover {
@@ -3074,8 +3074,8 @@ video {
 
 .focus\:bg-yellow-100:focus {
   --bg-opacity: 1;
-  background-color: #fffff0;
-  background-color: rgba(255, 255, 240, var(--bg-opacity));
+  background-color: #fad46b;
+  background-color: rgba(252, 213, 100, var(--bg-opacity));
 }
 
 .focus\:bg-yellow-200:focus {
@@ -15820,8 +15820,8 @@ video {
 
   .sm\:bg-yellow-100 {
     --bg-opacity: 1;
-    background-color: #fffff0;
-    background-color: rgba(255, 255, 240, var(--bg-opacity));
+    background-color: #fad46b;
+    background-color: rgba(252, 213, 100, var(--bg-opacity));
   }
 
   .sm\:bg-yellow-200 {
@@ -16380,8 +16380,8 @@ video {
 
   .sm\:hover\:bg-yellow-100:hover {
     --bg-opacity: 1;
-    background-color: #fffff0;
-    background-color: rgba(255, 255, 240, var(--bg-opacity));
+    background-color: #fad46b;
+    background-color: rgba(252, 213, 100, var(--bg-opacity));
   }
 
   .sm\:hover\:bg-yellow-200:hover {
@@ -16940,8 +16940,8 @@ video {
 
   .sm\:focus\:bg-yellow-100:focus {
     --bg-opacity: 1;
-    background-color: #fffff0;
-    background-color: rgba(255, 255, 240, var(--bg-opacity));
+    background-color: #fad46b;
+    background-color: rgba(252, 213, 100, var(--bg-opacity));
   }
 
   .sm\:focus\:bg-yellow-200:focus {
@@ -29643,8 +29643,8 @@ video {
 
   .md\:bg-yellow-100 {
     --bg-opacity: 1;
-    background-color: #fffff0;
-    background-color: rgba(255, 255, 240, var(--bg-opacity));
+    background-color: #fad46b;
+    background-color: rgba(252, 213, 100, var(--bg-opacity));
   }
 
   .md\:bg-yellow-200 {
@@ -30203,8 +30203,8 @@ video {
 
   .md\:hover\:bg-yellow-100:hover {
     --bg-opacity: 1;
-    background-color: #fffff0;
-    background-color: rgba(255, 255, 240, var(--bg-opacity));
+    background-color: #fad46b;
+    background-color: rgba(252, 213, 100, var(--bg-opacity));
   }
 
   .md\:hover\:bg-yellow-200:hover {
@@ -30763,8 +30763,8 @@ video {
 
   .md\:focus\:bg-yellow-100:focus {
     --bg-opacity: 1;
-    background-color: #fffff0;
-    background-color: rgba(255, 255, 240, var(--bg-opacity));
+    background-color: #fad46b;
+    background-color: rgba(252, 213, 100, var(--bg-opacity));
   }
 
   .md\:focus\:bg-yellow-200:focus {
@@ -43466,8 +43466,8 @@ video {
 
   .lg\:bg-yellow-100 {
     --bg-opacity: 1;
-    background-color: #fffff0;
-    background-color: rgba(255, 255, 240, var(--bg-opacity));
+    background-color: #fad46b;
+    background-color: rgba(252, 213, 100, var(--bg-opacity));
   }
 
   .lg\:bg-yellow-200 {
@@ -44026,8 +44026,8 @@ video {
 
   .lg\:hover\:bg-yellow-100:hover {
     --bg-opacity: 1;
-    background-color: #fffff0;
-    background-color: rgba(255, 255, 240, var(--bg-opacity));
+    background-color: #fad46b;
+    background-color: rgba(252, 213, 100, var(--bg-opacity));
   }
 
   .lg\:hover\:bg-yellow-200:hover {
@@ -44586,8 +44586,8 @@ video {
 
   .lg\:focus\:bg-yellow-100:focus {
     --bg-opacity: 1;
-    background-color: #fffff0;
-    background-color: rgba(255, 255, 240, var(--bg-opacity));
+    background-color: #fad46b;
+    background-color: rgba(252, 213, 100, var(--bg-opacity));
   }
 
   .lg\:focus\:bg-yellow-200:focus {
@@ -57289,8 +57289,8 @@ video {
 
   .xl\:bg-yellow-100 {
     --bg-opacity: 1;
-    background-color: #fffff0;
-    background-color: rgba(255, 255, 240, var(--bg-opacity));
+    background-color: #fad46b;
+    background-color: rgba(252, 213, 100, var(--bg-opacity));
   }
 
   .xl\:bg-yellow-200 {
@@ -57849,8 +57849,8 @@ video {
 
   .xl\:hover\:bg-yellow-100:hover {
     --bg-opacity: 1;
-    background-color: #fffff0;
-    background-color: rgba(255, 255, 240, var(--bg-opacity));
+    background-color: #fad46b;
+    background-color: rgba(252, 213, 100, var(--bg-opacity));
   }
 
   .xl\:hover\:bg-yellow-200:hover {
@@ -58409,8 +58409,8 @@ video {
 
   .xl\:focus\:bg-yellow-100:focus {
     --bg-opacity: 1;
-    background-color: #fffff0;
-    background-color: rgba(255, 255, 240, var(--bg-opacity));
+    background-color: #fad46b;
+    background-color: rgba(252, 213, 100, var(--bg-opacity));
   }
 
   .xl\:focus\:bg-yellow-200:focus {

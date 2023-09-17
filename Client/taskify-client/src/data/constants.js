@@ -1,12 +1,12 @@
-export const types = [ 'Story', 'Task', 'Bug' ];
-export const priorities = [ 'Medium', 'Highest', 'High', 'Low', 'Lowest' ];
-export const statuses = [ 'To do', 'Development', 'Testing', 'Done' ];
+export const types = ['Hikaye', 'Görev', 'Hata'];
+export const priorities = ['Orta', 'En Yüksek', 'Yüksek', 'Düşük', 'En Düşük'];
+export const statuses = ['Yapılacak', 'Geliştirme', 'Test', 'Tamamlandı'];
 
 export const initialStatuses = [
-	{ title: 'ToDo', issues: [] },
-	{ title: 'Development', issues: [] },
-	{ title: 'Testing', issues: [] },
-	{ title: 'Done', issues: [] }
+	{ title: 'Yapılacaklar', issues: [] },
+	{ title: 'Geliştirme', issues: [] },
+	{ title: 'Test', issues: [] },
+	{ title: 'Tamamlandı', issues: [] }
 ];
 
 export const initialIssue = {

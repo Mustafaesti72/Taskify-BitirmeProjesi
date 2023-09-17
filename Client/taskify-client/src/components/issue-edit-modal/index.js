@@ -80,12 +80,12 @@ const IssueEditModal = () => {
 				disabled={false}
 				initialIssue={openedIssue}
 				handleFetchData={deleting ? handleDeleteIssue : handleUpdateIssue}
-				formTitle="issue details"
+				formTitle="Görev Detayları"
 				handleModalClose={toggleUpdating}
 			>
 				<div className="flex md:mt-4 mt-6">
 					<DeleteButton handleDelete={handleDeleteClicked} />
-					<SubmitButton left="ml-6">Edit</SubmitButton>
+					<SubmitButton left="ml-6">Kaydet</SubmitButton>
 				</div>
 			</IssueForm>
 		</ModalContainer>

@@ -62,16 +62,16 @@ const SprintForm = ({ handleUpdateSprint, children, showDateInputs, successFunc 
 			}}
 		>
 			<div className="flex flex-col text-center w-full mb-4">
-				<p className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">Sprint details</p>
+				<p className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">Sprint detayları</p>
 			</div>
 			<div className="lg:w-2/3 md:w-2/3 mx-auto">
 				<div className="flex flex-wrap -m-2">
 					<div className="p-2 w-4/6">
-						<CustomLabel labelFor="title">Title</CustomLabel>
+						<CustomLabel labelFor="title">Başlık</CustomLabel>
 						<IssueFormsInput
 							handleChange={handleChange}
 							handleOnBlur={(event) => handleOnBlur(event, validateTitle, { title: data.title })}
-							placeholder="Title"
+							placeholder="Başlık"
 							type="text"
 							name="title"
 							value={data.title}
@@ -80,13 +80,13 @@ const SprintForm = ({ handleUpdateSprint, children, showDateInputs, successFunc 
 					</div>
 					{showDateInputs ? renderDateInputs() : null}
 					<div className="p-2 w-full">
-						<CustomLabel labelFor="goal">Goal</CustomLabel>
+						<CustomLabel labelFor="goal">Hedef</CustomLabel>
 						<textarea
 							onChange={handleChange}
 							onBlur={(event) => handleOnBlur(event, validateGoal, { goal: data.goal })}
 							name="goal"
 							className="w-full bg-gray-100 rounded border border-gray-400 focus:outline-none h-24 focus:border-teal-500 text-base px-4 py-2 resize-none block"
-							placeholder="Goal"
+							placeholder="Hedef"
 							value={data.goal}
 						/>
 						{errors.goal ? <ErrorMessageContainer>{errors.goal}</ErrorMessageContainer> : null}

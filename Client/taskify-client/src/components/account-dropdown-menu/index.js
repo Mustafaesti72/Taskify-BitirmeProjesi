@@ -29,15 +29,15 @@ const AccountDropdownMenu = () => {
 	return (
 		<DropdownContainer className="origin-top-right">
 			<UserInfoContainer>
-				Signed in as <UseInfo>{user.userName}</UseInfo>
+				Kullanıcı: <UseInfo>{user.userName}</UseInfo>
 			</UserInfoContainer>
 
 			<NavLinkContainer>
-				<DropdownLink to="/user/profile">PROFILE</DropdownLink>
+				<DropdownLink to="/user/profile">Profil</DropdownLink>
 			</NavLinkContainer>
 			<Border />
 			<NavLinkContainer>
-				<DropdownLink handleOnClick={handleSignOut}>SIGN OUT</DropdownLink>
+				<DropdownLink handleOnClick={handleSignOut}>Çıkış Yap</DropdownLink>
 			</NavLinkContainer>
 			<Border />
 		</DropdownContainer>

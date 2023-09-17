@@ -36,7 +36,7 @@ const SignInForm = () => {
 			toggleLoggedIn(true);
 			history.push('/user/projects');
 		} else {
-			setErrors({ ...errors, password: 'Invalid username or password' });
+			setErrors({ ...errors, password: 'Hatalı kullanıcı adı veya şifre' });
 		}
 	};
 
@@ -45,18 +45,18 @@ const SignInForm = () => {
 			onSubmit={(e) => handleSubmit(e, getErrors(), handleSignIn)}
 			className="lg:w-2/6 md:w-1/2 rounded-lg p-8 flex flex-col md:ml-0 w-full mt-10 md:mt-0"
 		>
-			<h2 className="text-gray-900 text-lg font-medium title-font mb-5">SIGN IN</h2>
+			<h2 className="text-gray-900 text-lg font-medium title-font mb-5">Giriş Yap</h2>
 			<FormInput handleChange={handleChange} type="text" name="email" value={data.email} placeholder="Email" />
 			{errors.email ? <ErrorMessageContainer>{errors.email}</ErrorMessageContainer> : null}
 			<FormInput
 				type="password"
 				name="password"
-				placeholder="Password"
+				placeholder="Parola"
 				value={data.password}
 				handleChange={handleChange}
 			/>
 			{errors.password ? <ErrorMessageContainer>{errors.password}</ErrorMessageContainer> : null}
-			<FormButton addClass="mt-4">SUBMIT</FormButton>
+			<FormButton addClass="mt-4">Giriş Yap</FormButton>
 		</form>
 	);
 };

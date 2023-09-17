@@ -1,6 +1,5 @@
-import React, { useContext, useState, useEffect } from 'react';
+import React, { useContext } from 'react';
 
-import { IssuesContext } from '../../providers/issues-context.provider';
 import { Context } from '../../providers/global-context.provider';
 
 import PriorityIcon from '../priority-icon';
@@ -14,7 +13,7 @@ const IssueCard = ({ issue, handleDragStart, handleDragEnter, invisible, handleC
 
 	const renderAssignee = () =>
 		issue.assignee.fullName ? (
-			<Avatar user={issue.assignee} bgColor="green" />
+			<Avatar user={issue.assignee} bgColor="green" size="w-50 h-50" />
 		) : (
 			<Tag text="unassigned" color="gray-500" size="w-24 h-4" />
 		);

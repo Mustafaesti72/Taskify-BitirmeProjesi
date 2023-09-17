@@ -1,7 +1,7 @@
 import tw from 'tailwind.macro';
 
 export const DropdownContainer = tw.div`
-absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white shadow-xs
+absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-orange-300 shadow-xs
 `;
 
 export const UserInfoContainer = tw.div`

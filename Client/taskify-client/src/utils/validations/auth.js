@@ -8,23 +8,21 @@ const USER = {
 	PASSWORD_MIN_LENGTH: 6,
 	EMAIL_PATTERN: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/
 };
-
 const ERROR_MESSAGES = {
 	USER: {
-		USERNAME: `Username should be between ${USER.USERNAME_MIN_LENGTH}
-		 and ${USER.USERNAME_MAX_LENGTH} characters long`,
-		USERNAME_REQUIRED: 'Username is required',
-		NAME: `Name should be between ${USER.NAME_MIN_LENGTH} and ${USER.NAME_MAX_LENGTH} characters long`,
-		NAME_REQUIRED: 'Name is required',
-		PASSWORD_REQUIRED: 'Password is required',
-		PASSWORD_LENGTH: `Password should be at least ${USER.PASSWORD_MIN_LENGTH} characters long`,
-		PASSWORDS_NOT_MATCH: 'Passwords should match',
-		CONFIRM_PASSWORD_REQUIRED: 'Password confirmation is required',
-		EMAIL: 'Invalid email',
-		EMAIL_REQUIRED: 'Email is required'
+	  USERNAME: `Kullanıcı adı ${USER.USERNAME_MIN_LENGTH}
+	   ile ${USER.USERNAME_MAX_LENGTH} karakter arasında olmalıdır.`,
+	  USERNAME_REQUIRED: 'Kullanıcı adı gereklidir.',
+	  NAME: `Soyad ${USER.NAME_MIN_LENGTH} ile ${USER.NAME_MAX_LENGTH} karakter arasında olmalıdır.`,
+	  NAME_REQUIRED: 'Ad gereklidir.',
+	  PASSWORD_REQUIRED: 'Parola gereklidir.',
+	  PASSWORD_LENGTH: `Parola en az ${USER.PASSWORD_MIN_LENGTH} karakter uzunluğunda olmalıdır.`,
+	  PASSWORDS_NOT_MATCH: 'Parolalar uyuşmuyor.',
+	  CONFIRM_PASSWORD_REQUIRED: 'Parola onayı gereklidir.',
+	  EMAIL: 'Geçersiz e posta',
+	  EMAIL_REQUIRED: 'E posta gereklidir.'
 	}
-};
-
+  };
 export const validateUsername = ({ username }) => {
 	if (!username) {
 		return getValidationResult(false, ERROR_MESSAGES.USER.USERNAME_REQUIRED);

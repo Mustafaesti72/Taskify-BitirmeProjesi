@@ -32,14 +32,15 @@ const InvitationsPage = () => {
 	if (!invitations) {
 		return <Spinner color="green-400" />;
 	}
-
+	console.log(invitations);
 	return (
 		<MainWrapper otherClasses="pb-24">
+			
 			{invitations.length > 0 ? (
 				<div className="container px-5 py-8 mx-auto">
-					<PageTopicContainer size="lg:w-2/3" title="Invitations" bottom="mb-5" />
+					<PageTopicContainer size="lg:w-2/3" title="Davetler" bottom="mb-5" />
 					<div className="lg:w-2/3 flex mb-8 flex-col sm:flex-row sm:items-center items-start mx-auto">
-					<p>Hello World</p>
+					<p></p>
 						
 						<div className="w-full">
 							{invitations.map((invitation) => (

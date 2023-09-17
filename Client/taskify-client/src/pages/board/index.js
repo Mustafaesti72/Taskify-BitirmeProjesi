@@ -116,7 +116,7 @@ const BoardPage = () => {
 						addClass={!currentProject.activeSprintId ? 'cursor-not-allowed' : ''}
 						textSize="text-md"
 					>
-						Complete Sprint
+						Sprinti Tamamla
 					</FormButton>
 				</PageTopicContainer>
 				<div className="container px-6 mb-8 mx-auto flex flex-wrap">

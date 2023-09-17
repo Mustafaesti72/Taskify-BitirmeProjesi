@@ -6,30 +6,30 @@ const StepsContainer = () => (
 	<div className="lg:w-2/5 md:w-1/2 md:pr-10 md:py-6">
 		<div className="flex relative pb-12">
 			<StepIconContainer name="account" bgColor="green-400" />
-			<StepTextContainer title="ACCOUNT">
-				Creating account is the first step to your successful project management!
+			<StepTextContainer title="HESAP">
+			Hesap oluşturmak, başarılı proje yönetiminizin ilk adımıdır!
 			</StepTextContainer>
 		</div>
 		<div className="flex relative pb-12">
 			<StepIconContainer name="project" bgColor="green-400" />
-			<StepTextContainer title="PROJECT">Create project. Taskify will help to manage it!</StepTextContainer>
+			<StepTextContainer title="PROJE">Proje oluşturun. Taskify, onu yönetmenize yardımcı olacak!</StepTextContainer>
 		</div>
 		<div className="flex relative pb-12">
 			<StepIconContainer name="team" bgColor="green-400" />
-			<StepTextContainer title="TEAM">
-				Great projects need great teams Add your teammates to plan, track, and build great project together.
+			<StepTextContainer title="TAKIM">
+				Harika projeler harika takımlar gerektirir. Takım arkadaşlarınızı ekleyin, harika projeleri birlikte planlayın, izleyin ve oluşturun.
 			</StepTextContainer>
 		</div>
 		<div className="flex relative pb-12">
 			<StepIconContainer name="done" bgColor="green-400" />
-			<StepTextContainer title="READY">
-				Congratulations! Now you can start planning the work of your team.
+			<StepTextContainer title="HAZIRSINIZ">
+			Tebrikler! Şimdi takımınızın işini planlamaya başlayabilirsiniz.
 			</StepTextContainer>
 		</div>
 		<div className="flex relative">
 			<StepIconContainer name="enjoy" bgColor="green-400" />
-			<StepTextContainer title="Enjoy">
-				Don't forget to enjoy your work! With Taskify it's easy to do it.
+			<StepTextContainer title="KEYFİNİ ÇIKARTIN">
+			İşinizden keyif almamayı unutmayın! Taskify ile bunu yapmak kolay.
 			</StepTextContainer>
 		</div>
 	</div>

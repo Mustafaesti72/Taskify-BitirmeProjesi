@@ -49,7 +49,7 @@ const CreateIssueModal = () => {
 		<ModalContainer onClose={handleClose} show={creating} addBgColor="bg-black bg-opacity-25">
 			<IssueForm
 				handleFetchData={handleCreateIssue}
-				formTitle="Create issue"
+				formTitle="Görev oluştur"
 				handleModalClose={toggleCreating}
 				buttonTitle="Create"
 			>
@@ -57,7 +57,7 @@ const CreateIssueModal = () => {
 					type="submit"
 					className="flex mx-auto text-white bg-green-400 border-0 py-2 px-8 focus:outline-none hover:bg-green-600 rounded text-lg"
 				>
-					Create
+					Oluştur
 				</button>
 			</IssueForm>
 		</ModalContainer>

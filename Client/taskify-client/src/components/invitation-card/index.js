@@ -38,9 +38,9 @@ const InvitationCard = ({ invitation }) => {
 
 	const getMessage = () => (
 		<div className="pt-1">
-			<span className="text-green-600">{senderFullName}</span> invited you to{' '}
-			<span className="text-teal-600">{projectName}</span> project in{' '}
-			<span className="text-orange-600">{teamName}</span> team.
+			<span className="text-green-600">{senderFullName}</span> sizi {' '}
+			<span className="text-teal-600">{projectName}</span> projesi için bu takıma{' '}
+			<span className="text-orange-600">{teamName}</span> davet etti.
 		</div>
 	);
 

@@ -3,7 +3,7 @@ import MainWrapper from '../../components/main-wrapper';
 import HomeHero from '../../components/home-hero';
 import StepsContainer from '../../components/steps-container';
 import About from '../../components/about';
-import image from '../../assets/watermelon-pack-illustration-18.svg';
+import image from '../../assets/plan.svg';
 
 const HomePage = () => {
 	useEffect(() => {

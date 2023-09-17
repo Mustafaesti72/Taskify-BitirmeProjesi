@@ -22,7 +22,7 @@ const BacklogDndContainer = ({ onDragEnter, estimate, sprint, sprintIndex, issue
 	const { toggleModalIsOpen } = useContext(Context);
 	const { currentProject } = useContext(ProjectsContext);
 
-	const buttonTitle = !sprint ? 'Add Sprint' : 'Start Sprint';
+	const buttonTitle = !sprint ? 'Sprint Ekle' : 'Sprint Başlat';
 
 	const handleAddSprint = async () => {
 		const token = getCookie('x-auth-token');
@@ -75,7 +75,7 @@ const BacklogDndContainer = ({ onDragEnter, estimate, sprint, sprintIndex, issue
 	return (
 		<div className="lg:mx-24 lg:w-5/6 text-right md:w-full w-full mt-12" {...otherProps}>
 			<UpperActionsContainer>
-				<div>{!sprint ? 'Backlog' : sprint.title}</div>
+				<div>{!sprint ? 'Görevler' : sprint.title}</div>
 				<FlexWrapper>
 					<ClearButton
 						onClick={!sprint ? handleAddSprint : sprintIndex === 0 ? handleStartSprint : null}
@@ -96,9 +96,9 @@ const BacklogDndContainer = ({ onDragEnter, estimate, sprint, sprintIndex, issue
 			</UpperActionsContainer>
 			<ChildrenContainer onDragEnter={onDragEnter}>{children}</ChildrenContainer>
 			<UnderActionsContainer>
-				<ClearButton onClick={handleCreateIssueClick}>+ Create issue</ClearButton>
+				<ClearButton onClick={handleCreateIssueClick}>+ Görev oluştur</ClearButton>
 				<FlexWrapper>
-					{issuesCount} issue / Estimate: {estimate}
+					{issuesCount} Görev / Tahmini Süre: {estimate}
 				</FlexWrapper>
 			</UnderActionsContainer>
 		</div>

@@ -44,21 +44,21 @@ const CreateProjectForm = () => {
 			onSubmit={(e) => handleSubmit(e, getErrors(), handleCreateProject)}
 			className="lg:w-2/6 md:w-1/2 rounded-lg p-8 flex flex-col md:ml-0 w-full mt-10 md:mt-0"
 		>
-			<h2 className="text-gray-900 text-lg font-medium title-font mb-5">CREATE PROJECT</h2>
+			<h2 className="text-gray-900 text-lg font-medium title-font mb-5">Proje Oluştur</h2>
 			<FormInput
 				handleChange={handleChange}
 				handleOnBlur={(event) => handleOnBlur(event, validateName, { name: data.name })}
 				type="text"
 				name="name"
 				value={data.name}
-				placeholder="Project Name"
+				placeholder="Proje ismi"
 			/>
 			{errors.name ? <ErrorMessageContainer>{errors.name}</ErrorMessageContainer> : null}
 
 			<FormInput
 				type="text"
 				name="key"
-				placeholder="Key"
+				placeholder="Anahtar"
 				value={data.key}
 				handleChange={handleChange}
 				handleOnBlur={(event) => handleOnBlur(event, validateKey, { key: data.key })}
@@ -66,12 +66,9 @@ const CreateProjectForm = () => {
 			{errors.key ? (
 				<ErrorMessageContainer>{errors.key}</ErrorMessageContainer>
 			) : (
-				<InfoMessageContainer>
-					The project key is used as the prefix of your project's issue keys (e.g. 'TEST-100'). Choose one
-					that is descriptive and easy to type.
-				</InfoMessageContainer>
+''
 			)}
-			<FormButton addClass="mt-4">SUBMIT</FormButton>
+			<FormButton addClass="mt-4">KAYDET</FormButton>
 		</form>
 	);
 };

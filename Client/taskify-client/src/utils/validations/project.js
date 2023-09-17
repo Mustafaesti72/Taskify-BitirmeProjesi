@@ -6,16 +6,15 @@ const PROJECT = {
 	NAME_MIN_LENGTH: 6,
 	NAME_MAX_LENGTH: 80
 };
-
 const ERROR_MESSAGES = {
 	PROJECT: {
-		KEY: `Key should be between ${PROJECT.KEY_MIN_LENGTH}
-		 and ${PROJECT.KEY_MAX_LENGTH} characters long`,
-		KEY_REQUIRED: 'Key is required',
-		NAME: `Project Name should be between ${PROJECT.NAME_MIN_LENGTH} and ${PROJECT.NAME_MAX_LENGTH} characters long`,
-		NAME_REQUIRED: 'Project Name is required'
+	  KEY: `Anahtar ${PROJECT.KEY_MIN_LENGTH}
+	   ile ${PROJECT.KEY_MAX_LENGTH} karakter arasında olmalıdır`,
+	  KEY_REQUIRED: 'Anahtar gereklidir',
+	  NAME: `Proje Adı ${PROJECT.NAME_MIN_LENGTH} ile ${PROJECT.NAME_MAX_LENGTH} karakter arasında olmalıdır`,
+	  NAME_REQUIRED: 'Proje Adı gereklidir'
 	}
-};
+  };
 
 export const validateName = ({ name }) => {
 	if (!name) {

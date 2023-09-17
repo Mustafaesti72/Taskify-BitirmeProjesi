@@ -6,17 +6,16 @@ const SPRINT = {
 	GOAL_MIN_LENGTH: 2,
 	GOAL_MAX_LENGTH: 500
 };
-
 const ERROR_MESSAGES = {
 	SPRINT: {
-		TITLE: `Title should be between ${SPRINT.TITLE_MIN_LENGTH}
-		 and ${SPRINT.TITLE_MAX_LENGTH} characters long`,
-		TITLE_REQUIRED: 'Title is required',
-		GOAL: `Goal should be between ${SPRINT.GOAL_MIN_LENGTH} and ${SPRINT.GOAL_MAX_LENGTH} characters long`,
-		END_DATE_REQUIRED: 'End date is required',
-		START_DATE_REQUIRED: 'Start date is required'
+	  TITLE: `Başlık ${SPRINT.TITLE_MIN_LENGTH}
+	   ile ${SPRINT.TITLE_MAX_LENGTH} karakter arasında olmalıdır`,
+	  TITLE_REQUIRED: 'Başlık gereklidir',
+	  GOAL: `Hedef ${SPRINT.GOAL_MIN_LENGTH} ile ${SPRINT.GOAL_MAX_LENGTH} karakter arasında olmalıdır`,
+	  END_DATE_REQUIRED: 'Bitiş tarihi gereklidir',
+	  START_DATE_REQUIRED: 'Başlangıç tarihi gereklidir'
 	}
-};
+  };
 
 export const validateTitle = ({ title }) => {
 	if (!title) {

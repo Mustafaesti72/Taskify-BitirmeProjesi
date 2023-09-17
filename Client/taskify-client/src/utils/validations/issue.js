@@ -9,14 +9,14 @@ const ISSUE = {
 
 const ERROR_MESSAGES = {
 	ISSUE: {
-		POINTS: 'Story points should be positive integer',
-		TITLE: `Title should be between ${ISSUE.TITLE_MIN_LENGTH}
-		 and ${ISSUE.TITLE_MAX_LENGTH} characters long`,
-		TITLE_REQUIRED: 'Title is required',
-		DESCRIPTION_REQUIRED: 'Description is required',
-		DESCRIPTION: `Description should be between ${ISSUE.DESCRIPTION_MIN_LENGTH} and ${ISSUE.DESCRIPTION_MAX_LENGTH} characters long`
+	  POINTS: 'Hikaye puanları pozitif bir tamsayı olmalıdır',
+	  TITLE: `Başlık ${ISSUE.TITLE_MIN_LENGTH}
+	   ile ${ISSUE.TITLE_MAX_LENGTH} karakter arasında olmalıdır`,
+	  TITLE_REQUIRED: 'Başlık gereklidir',
+	  DESCRIPTION_REQUIRED: 'Açıklama gereklidir',
+	  DESCRIPTION: `Açıklama ${ISSUE.DESCRIPTION_MIN_LENGTH} ile ${ISSUE.DESCRIPTION_MAX_LENGTH} karakter arasında olmalıdır`
 	}
-};
+  };
 
 export const validateTitle = ({ title }) => {
 	if (!title) {

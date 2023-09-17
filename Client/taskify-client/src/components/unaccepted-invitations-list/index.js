@@ -31,7 +31,7 @@ const UnacceptedInvitationsList = ({ invitations }) => {
 			value={
 				<div>
 					{invitation.recipientEmail}{' '}
-					{invitation.declined ? <span className="ml-2 text-red-400">Declined</span> : null}
+					{invitation.declined ? <span className="ml-2 text-red-400">Reddedilmiş</span> : null}
 				</div>
 			}
 		>

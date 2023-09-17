@@ -41,7 +41,7 @@ const InviteToTeamForm = ({ teamId }) => {
 
 	return (
 		<form onSubmit={(e) => handleSubmit(e, getErrors(), handleInvite)}>
-			<InfoMessageContainer className="mb-2 leading-relaxed">Invite team member</InfoMessageContainer>
+			<InfoMessageContainer className="mb-2 leading-relaxed">Takım arkadaşı davet et</InfoMessageContainer>
 			<div className="flex w-full md:justify-start justify-between">
 				<FormInput
 					handleChange={handleChange}
@@ -55,7 +55,7 @@ const InviteToTeamForm = ({ teamId }) => {
 					type="submit"
 					className="inline-flex justify-end text-white bg-green-400 border-0 py-2 px-6 focus:outline-none hover:bg-teal-600 rounded text-lg"
 				>
-					Invite
+					Davet Et
 				</button>
 			</div>
 			{errors.email ? <ErrorMessageContainer>{errors.email}</ErrorMessageContainer> : null}
